@@ -1,0 +1,9 @@
+COMMAND  |  PERMISSION
+/ads buy - ads.announce
+/ads removeall - ads.confirmation
+/ads requests - ads.confirmation
+/ads off / on -   ads.toggle
+
+Do /ads help in-game to see all commands & permissions.
+
+Being an operator on the server will make you be able to access all without permissions.
