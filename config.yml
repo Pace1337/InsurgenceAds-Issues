@@ -1,0 +1,59 @@
+# This only works for 1.9+
+barColors:
+  - ''
+  - ''
+  - ''
+
+# Change time in seconds.
+change_time: 3
+
+# Time that the advertisement will last, its not the change time, but the whole period, in seconds.
+ads_time: 60
+
+# Title that will show when no one is advertising, this only shows if 'show-no-ads' is true.
+no_ads_title: "&fBuy ads here using /ads buy <message> for &a$3000"
+
+# Show the bar when there's no ads?
+show-no-ads: true
+
+# You can find all the BarStyles here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarStyle.html
+# Only works for 1.9+
+barStyle: "SEGMENTED_20"
+
+# Bar Modes: ONE_TIME, CHAR_BY_CHAR.
+barMode: "CHAR_BY_CHAR"
+
+# Cost to announce one message, make sure to change the "no_ads_title" message above too.
+cost_per_ads: 3000
+
+# Should the plugin notify staff that there is an ad pending upon joining the server?
+notify_on_join: true
+
+# Make sure to configure the messages properly! You can remove the InsurgenceAds from all the messages if you wish, or replace it with your server name.
+messages:
+  # Message for not enough money to buy an advertisement.
+  dont-have-money: "&7[&bInsurgenceAds&7]&b You don't have enough money to advertise."
+  # Message for advertisement being sent for apporoval.
+  advertise-approval: "&7[&bInsurgenceAds&7]&b Your advertisement is waiting for staff approval."
+  # Message for already having advertisement pending approval.
+  you-already-have-ads-waiting-approval: "&7[&bInsurgenceAds&7]&b You already have one advertisement waiting for approval."
+  # Message if advertisement is already pending.
+  you-already-have-ads-ocurring: "&7[&bInsurgenceAds&7]&b You cannot advertise while you have one advertisement message going on."
+  # What message should staff see if there is an advertisement pending if option "notify_on_join" is enabled.
+  staff-notify-pending: "&7[&bInsurgenceAds&7]&b There is an advertisement currently pending! /ads requests"
+  # What message should staff see if there is no advertisement pending if option "notify_on_join" is enabled.
+  staff-notify-nopending: "&7[&bInsurgenceAds&7]&b There is currently no advertisement pending."
+  # /ads removeall message.
+  staff-remove-all-ads: "&7[&bInsurgenceAds&7]&b You have removed all pending advertisements."
+  # Message sent to staff that they need to chose Y or N.
+  staff-deny-or-accept: "&7[&bInsurgenceAds&7]&b Please chat Y to accept, N to deny the ad request."
+  # Message sent to staff once approve a request.
+  staff-approved-request: "&7[&bInsurgenceAds&7]&b You have approved this request."
+  # Message sent to staff once they deny a request.
+  staff-deny-request: "&7[&bInsurgenceAds&7]&b You have denied this request."
+  # Incorrect usage of a command.
+  incorrect-usage: "&7[&bInsurgenceAds&7]&b Incorrect usage, please type /ads help for list of commands."
+  # Ignores all the advertisements (This removes the bar for the player) /ads off Permission: (ads.toggle) or operator.
+  advertisements-off: "&7[&bInsurgenceAds&7]&b You are now ignoring all the advertisements."
+  # See advertisements again after typing /ads on Permission: (ads.toggle) or operator.
+  advertisements-on: "&7[&bInsurgenceAds&7]&b You can now see advertisements again."
